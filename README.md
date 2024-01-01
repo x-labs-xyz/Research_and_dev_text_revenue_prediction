@@ -59,9 +59,6 @@ Findings: Strong AUVROC for shorter lag (1, 2), gets weaker with increase in lag
 Stocks_Returns_Collector.ipynb: jupyter notebook to collect stock returns to see how stocks selected bu our model perform in comparison to an benchmark.
 Findings: (work in progress), pickle file for renevnue got corrupted, collecting for the 3rd time.
 
-# Folder Included in the Repository 
-
-
 
 
 
