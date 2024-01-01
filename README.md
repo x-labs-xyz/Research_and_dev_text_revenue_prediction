@@ -17,17 +17,29 @@ Labels_Creator.ipynb: jupyter notebook that creates labels for the companies bas
 TFIDF_Regressions.ipynb: jupyter notebook with logistic regression/svm for different years of TFIDF representation of the filings against quartile based labels of R&D Growth.
 - collected following metrics for Logistic Regression and SVM:
 "lr_train_acc": "Ratio of correctly predicted instances by a logistic regression model on the training dataset",
+
 "lr_test_acc": "Ratio of correctly predicted instances by a logistic regression model on the testing dataset",
+
 "svc_train_acc": "Ratio of correctly predicted instances by a Support Vector Classifier (SVC) model on the training dataset",
+
 "svc_test_acc": "Ratio of correctly predicted instances by an SVC model on the testing dataset",
+
 "lr_precision": "Ratio of true positives to the sum of true positives and false positives in logistic regression",
+
 "lr_recall": "Ratio of true positives to the sum of true positives and false negatives in logistic regression",
+
 "lr_f1": "Harmonic mean of precision and recall in logistic regression",
+
 "svc_precision": "Ratio of true positives to the sum of true positives and false positives in a Support Vector Classifier (SVC) model",
+
 "svc_recall": "Ratio of true positives to the sum of true positives and false negatives in an SVC model",
+
 "svc_f1": "Harmonic mean of precision and recall in a Support Vector Classifier (SVC) model",
+
 "OVO_auroc": "Measure of the ability of a classifier to distinguish between classes using the One-vs-One strategy in multi-class classification",
+
 "OVR_auroc": "Measure of the ability of a classifier to distinguish between classes using the One-vs-Rest strategy in multi-class classification"
+
 
 Findings: Logistic Regression out performed SVM in out of sample test, Strong AUROC for the regression
 
