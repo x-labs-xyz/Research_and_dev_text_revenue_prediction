@@ -43,12 +43,12 @@ This research leverages advanced natural language processing techniques to analy
 Findings: Logistic Regression out performed SVM in out of sample test, Strong AUROC for the regression
 
 [GPT_embeddings_Regressions.ipynb](GPT_embeddings_Regressions.ipynb): jupyter notebook with logistic regression/svm for different years of GPT_embeddings of the filings against quartile based labels of R&D Growth.
-- collected same metrics as with TDIFD_Regressions
+- collected same metrics as with TFIDF_Regressions
 
 Findings: Logistic Regression still out performed SVM in out of sample test, Accuracy and AUROC for GPT_embeddings were slightly better but not siginifcant.
 
 [Backpropped_Regressions.ipynb](Backpropped_Regression.ipynb): jupyter notebook with logistic regression/svm for different years of backpropped_embeddings of the filings against quartile based labels of R&D Growth.
-- collected same metrics as with TDIFD_Regressions
+- collected same metrics as with TFIDF_Regressions
 
 Findings: Contrary to our hypothesis, the model were significantly way worse. Out of sample accuracy of 
 
