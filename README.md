@@ -6,7 +6,7 @@ This research leverages advanced natural language processing techniques to analy
 
 
 # Jupyter Notebooks Included in the Repository
-Preprocessing.ipynb: jupyter notebook with preprocessing of the 10k-10q filings of publically traded companies between 2010 and 2021.
+[Preprocessing.ipynb](Preprocessing.ipynb): jupyter notebook with preprocessing of the 10k-10q filings of publically traded companies between 2010 and 2021.
 - We have utilized spacy library with "en_core_web_lg" pipeline to break the filiing into list of sentences.
 - We checked if the sentences have any keywords we have selected as terms signaling R&D to curate our corpus.
 
