@@ -1,20 +1,16 @@
 # Research_and_dev_text_revenue_prediction
 This research leverages advanced natural language processing techniques to analyze the textual content of company 10-K and 10-Q filings for the purpose of predicting future revenue. The study employs two key text to vector representation: Term Frequency-Inverse Document Frequency (TF-IDF) analysis and ChatGPT embeddings. The findings contribute to the growing field of financial forecasting by demonstrating the effectiveness of combining traditional statistical methods with state-of-the-art natural language processing approaches for enhanced predictive analytics in the quantative finance domain.
 
-# Folder Included in the Repository 
-
-
-
 # Jupyter Notebooks Included in the Repository
 [Preprocessing.ipynb](Preprocessing.ipynb): jupyter notebook with preprocessing of the 10k-10q filings of publically traded companies between 2010 and 2021.
 - We have utilized spacy library with "en_core_web_lg" pipeline to break the filiing into list of sentences.
 - We checked if the sentences have any keywords we have selected as terms signaling R&D to curate our corpus.
 
-Labels_Creator.ipynb: jupyter notebook that creates labels for the companies based on CAGR of revenue growth from a base year 
+[Labels_Creator.ipynb](Labels_Creator.ipynb): jupyter notebook that creates labels for the companies based on CAGR of revenue growth from a base year 
 (CAGR Rev > Q1: 1,  Q1 < CAGR Rev < Q3: 2, CAGR Rev > Q3: 3)
 - We have utilized Financial Modeling Prep API for revenue data.
 
-TFIDF_Regressions.ipynb: jupyter notebook with logistic regression/svm for different years of TFIDF representation of the filings against quartile based labels of R&D Growth.
+[TFIDF_Regressions.ipynb](TFIDF_Regressions.ipynb): jupyter notebook with logistic regression/svm for different years of TFIDF representation of the filings against quartile based labels of R&D Growth.
 - collected following metrics for Logistic Regression and SVM:
 "lr_train_acc": "Ratio of correctly predicted instances by a logistic regression model on the training dataset",
 
@@ -43,22 +39,26 @@ TFIDF_Regressions.ipynb: jupyter notebook with logistic regression/svm for diffe
 
 Findings: Logistic Regression out performed SVM in out of sample test, Strong AUROC for the regression
 
-GPT_embeddings_Regressions.ipynb: jupyter notebook with logistic regression/svm for different years of GPT_embeddings of the filings against quartile based labels of R&D Growth.
+[GPT_embeddings_Regressions.ipynb](GPT_embeddings_Regressions.ipynb): jupyter notebook with logistic regression/svm for different years of GPT_embeddings of the filings against quartile based labels of R&D Growth.
 - collected same metrics as with TDIFD_Regressions
 
 Findings: Logistic Regression still out performed SVM in out of sample test, Accuracy and AUROC for GPT_embeddings were slightly better but not siginifcant.
 
-Backpropped_Regressions.ipynb: jupyter notebook with logistic regression/svm for different years of backpropped_embeddings of the filings against quartile based labels of R&D Growth.
+[Backpropped_Regressions.ipynb](Backpropped_Regression.ipynb): jupyter notebook with logistic regression/svm for different years of backpropped_embeddings of the filings against quartile based labels of R&D Growth.
 - collected same metrics as with TDIFD_Regressions
 
 Findings: Contrary to our hypothesis, the model were significantly way worse. Out of sample accuracy of 
 
-Cross_year_check.ipynb: jupyter notebook that tests the logistic regression/svm of a given year using data from years in the future to test robustness of the models.
+[Cross_year_check.ipynb](Cross_Year_Check.ipynb): jupyter notebook that tests the logistic regression/svm of a given year using data from years in the future to test robustness of the models.
 
 Findings: Strong AUVROC for shorter lag (1, 2), gets weaker with increase in lags(4, 5). OVO_auroc range for t+1: [0.689, 0.742], t+5: [0.655, 0.710]
 
 Stocks_Returns_Collector.ipynb: jupyter notebook to collect stock returns to see how stocks selected bu our model perform in comparison to an benchmark.
 Findings: (work in progress), pickle file for renevnue got corrupted, collecting for the 3rd time.
+
+# Folder Included in the Repository 
+
+
 
 
 
